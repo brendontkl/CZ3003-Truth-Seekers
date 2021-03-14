@@ -36,13 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\DBManager.cs" />
-     <Compile Include="Assets\Game.cs" />
-     <Compile Include="Assets\Login.cs" />
-     <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\Registration.cs" />
-     <Compile Include="Assets\TabBetween.cs" />
-     <Compile Include="Assets\WebTest.cs" />
+     <Compile Include="Assets\Scripts\DBManager.cs" />
+     <Compile Include="Assets\Scripts\Game.cs" />
+     <Compile Include="Assets\Scripts\Login.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MenuMusic.cs" />
+     <Compile Include="Assets\Scripts\Registration.cs" />
+     <Compile Include="Assets\Scripts\TabBetween.cs" />
+     <Compile Include="Assets\Scripts\Wait.cs" />
+     <Compile Include="Assets\Scripts\WebTest.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -606,6 +608,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FullscreenEditor.csproj">
+      <Project>{d560ede7-8b5e-3e61-c08e-ee0f00b2fc8a}</Project>
+      <Name>FullscreenEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
