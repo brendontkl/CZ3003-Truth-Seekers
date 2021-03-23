@@ -8,6 +8,9 @@ public class Enemy : MonoBehaviour
     public GameObject EnemyMob, EnemyBoss0, EnemyBoss1, EnemyBoss2, EnemyBoss3;
     public int enemyHP;
     public List<GameObject> enemies = new List<GameObject>();
+    public Animator animator;
+
+    private float sec = 3.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,7 @@ public class Enemy : MonoBehaviour
     {
         int qnsCount = MCQs.Length / 9;
         int enemyMobCount = 0;
+
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
@@ -53,7 +57,7 @@ public class Enemy : MonoBehaviour
 
         //global enemyMobCount2
         //
-        Debug.Log(qnsCount);
+        //Debug.Log(qnsCount);
         //enemyMobCount += 7;
         for (int i = 0; i < enemyMobCount; i++)
         {
@@ -85,5 +89,27 @@ public class Enemy : MonoBehaviour
     void countEnemy()
     {
 
+    }
+    public void EnemyDeath()
+    {
+        Debug.Log("Dead");
+        enemies[0].GetComponent<Enemy>().playDeathAni();
+        StartCoroutine(DeleteCall());
+    }
+    IEnumerator DeleteCall()
+    {
+        yield return new WaitForSeconds(sec);
+        GameObject Temp = enemies[0];
+        enemies.RemoveAt(0);
+        Destroy(Temp);
+
+    }
+    public void playDeathAni()
+    {
+        animator.SetBool("Die", true);
+    }
+    public void playAtkAni()
+    {
+        animator.SetBool("Attack", true);
     }
 }

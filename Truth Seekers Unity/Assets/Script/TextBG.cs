@@ -14,4 +14,21 @@ public class TextBG : MonoBehaviour
         c.a = 0.8f;
         image.color = c;
     }
+
+    public void Selectedbtn()
+    {
+        image = GetComponent<Image>();
+
+        Color c = image.color;
+        c.a = 1f;
+        image.color = c;
+    }
+    public void Unselectedbtn()
+    {
+        image = GetComponent<Image>();
+
+        Color c = image.color;
+        c.a = 0.8f;
+        image.color = c;
+    }
 }

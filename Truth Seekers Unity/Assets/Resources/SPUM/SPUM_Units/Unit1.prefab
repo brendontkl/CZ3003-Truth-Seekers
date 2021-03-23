@@ -539,6 +539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5898036904022358581}
   - component: {fileID: 5244017595017329312}
+  - component: {fileID: -2174653531186191553}
   m_Layer: 5
   m_Name: Unit1
   m_TagString: Untagged
@@ -583,6 +584,30 @@ MonoBehaviour:
   EditChk: 0
   _code: Unit1
   _anim: {fileID: 895598566534363904}
+--- !u!114 &-2174653531186191553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531680242145493523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194b0bc7712cbad4d9d373807088d9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyMob: {fileID: 1531680242145493523}
+  EnemyBoss0: {fileID: 1531680242145493523, guid: 402aee63e950fe6418e0ff5a2b0d892b,
+    type: 3}
+  EnemyBoss1: {fileID: 1531680242145493523, guid: 5bcf5a9d55b5eb2489a941029134f89a,
+    type: 3}
+  EnemyBoss2: {fileID: 1531680242145493523, guid: 5c4e78ef670bca04ca8863db302a8ddc,
+    type: 3}
+  EnemyBoss3: {fileID: 1531680242145493523, guid: 4943929480c207141847fe3fb167250a,
+    type: 3}
+  enemyHP: 1
+  enemies: []
+  animator: {fileID: 895598566534363904}
 --- !u!1 &1609508328680681528
 GameObject:
   m_ObjectHideFlags: 0
