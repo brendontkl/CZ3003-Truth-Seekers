@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerSpawnPoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -38,6 +40,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3209396389
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 3212298617
+    locked: 0
+  - name: Effects
+    uniqueID: 3153876745
+    locked: 0
+  - name: UI BG
+    uniqueID: 4195794427
+    locked: 0
+  - name: UI Text
+    uniqueID: 345972361
     locked: 0
